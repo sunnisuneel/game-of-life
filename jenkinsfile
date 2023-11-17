@@ -27,7 +27,7 @@ node('jdk-8') {
         failure {
             mail subject: "Jenkins Build of ${JOB_NAME} with id ${BUILD_ID} is failed",
                 body: "Use this URL ${BUILD_URL} for more info",
-                to: "sandbox.smtp.mailtrap.io",
+                to: 'sandbox.smtp.mailtrap.io',
                 from: 'devops@qt.com'
         }
     }
