@@ -1,4 +1,5 @@
 node('jdk-8') {
+    triggers { cron ('H/15 * * * *') }
     stage('version control') {
         git url: 'https://github.com/sunnisuneel/game-of-life.git',
             branch: 'master'
