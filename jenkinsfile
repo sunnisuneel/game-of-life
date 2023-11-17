@@ -1,5 +1,5 @@
 node('jdk-8') {
-    triggers { pollSCM ('H/5 * * * *') }
+    triggers { pollSCM ('H/5  * * * * ') }
     stage('version control') {
         git url: 'https://github.com/sunnisuneel/game-of-life.git',
             branch: 'master'
